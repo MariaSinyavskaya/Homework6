@@ -66,12 +66,9 @@ public class Main {
         System.out.println("\nЗадача 9:");
         int money = 29000;
         double total = 0;
-        int moneyWithPenny = money * 100;
-        int totalWithPenny = 0;
         for (int i = 0; i < 12; i++) {
-            totalWithPenny += totalWithPenny / 100;
-            totalWithPenny += moneyWithPenny;
-            total = totalWithPenny / 100.;
+            total *= 1.01;
+            total += money;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
         }
     }
